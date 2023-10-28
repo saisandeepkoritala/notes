@@ -1,0 +1,274 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sidebar{
+    background-color: rgba(231, 231, 235, 0.795);
+    padding: 5px 10px;
+    width:100%;
+    position: fixed;
+}
+.sidebar .sidebarlinks{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width:100%;
+}
+
+.sidebar .sidebarlinks a {
+    text-decoration: none;
+    display:block;
+    padding: 10px;
+    font-size: 1.5rem;
+    color:black;
+    letter-spacing: 2px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sidebar .sidebarlinks  a:visited {
+    color: #ff6600;
+}
+
+
+.sidebar .sidebarlinks  a:hover {
+    text-decoration: underline; 
+    color:brown;
+    transform: scale(1.15);
+    background-color: aliceblue;
+}
+
+
+.sidebar .sidebarlinks a:active {
+    color: #ff0000; 
+}
+
+.sidebar .sidebarlinks a:nth-child(4){
+    margin-left: auto;
+}
+
+.navbar .allroutes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.navbar .allroutes .landing {
+    padding: 5px;
+    gap:10px;
+    margin-top:70px;
+}
+
+.navbar .allroutes .landing .header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:rgb(233, 229, 229);
+}
+
+.navbar .allroutes .landing .header .btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.navbar .allroutes .landing .pics{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    background-color:darkgray;
+}
+
+.navbar .allroutes .landing .pics .box{
+    width:400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    border:1px solid black;
+    margin: 5px;
+    background-color: antiquewhite;
+}
+
+.navbar .allroutes .landing .pics .box img{
+    width:300px;
+    height:300px;
+    object-fit: contain;
+}
+
+.navbar .allroutes .landing .pics >h2{
+    color:rgb(228, 223, 223);
+    text-shadow: 10px 10px 10px red, -10px -10px 10px blue;
+    font-size: 1.8rem;
+}
+
+.navbar .allroutes .landing .footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(73, 63, 63);
+    color:white;
+}
+.navbar .allroutes .landing .footer h2{
+    color:black;
+}
+
+.navbar .allroutes .landing .footer >div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+    padding: 5px;
+}
+
+.navbar .allroutes .landing .footer div >p{
+    cursor: pointer;
+}
+
+.navbar .allroutes .landing .header img{
+    height:600px;
+    width:800px;
+    object-fit: contain;
+}
+
+.navbar .allroutes .container{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .allroutes .container .box{
+    width:500px;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    cursor: pointer;
+    border:1px solid black;
+    margin: 5px;
+    background-color: antiquewhite;
+}
+
+.navbar .allroutes .container .box img{
+    width:400px;
+    height:400px;
+    object-fit: contain;
+}
+
+.navbar .allroutes .container .btns{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    gap:20px;
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+.navbar .allroutes .container .btns button{
+    display: block;
+    padding: 10px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    border: 2px solid blue;
+}
+
+.navbar .allroutes .container .btns button:hover{
+    background-color:rgb(54, 48, 48) ;
+    color:white;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.navbar .allroutes .container .show{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navbar .allroutes .login{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-evenly;
+    gap:10px;
+    font-size: 2rem;
+    border:1px solid red;
+    width:30vw;
+    min-height: 70vh;
+    background-color: antiquewhite;
+}
+
+.navbar .allroutes .login input{
+    width:200px;
+    height: 25px;
+}
+
+.navbar .allroutes .login button{
+    padding: 5px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    box-shadow: 1px 1px 10px blue ;
+}
+
+.navbar .allroutes .cart{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.navbar .allroutes .cart >h2{
+    background-color:black;
+    color: white;
+    padding: 50px;
+}
+
+.navbar .allroutes .cart .box{
+    width:500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    cursor: pointer;
+    border:1px solid black;
+    margin: 5px;
+    background-color: antiquewhite;
+}
+
+.navbar .allroutes .cart .box img{
+    width:400px;
+    height:400px;
+    object-fit: contain;
+}
+.navbar .sidebar .sidebarlinks .carticon{
+    position: relative;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.navbar .sidebar .sidebarlinks .carticon .number{
+    position: absolute;
+    right:-25%;
+    top:-38%;
+    color:red;
+}
